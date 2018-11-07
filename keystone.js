@@ -9,10 +9,6 @@ keystone.init({
 	'name': 'SysBeach',
 	'brand': 'SysBeach',
 
-	'less': 'public',
-	'static': 'public',
-	'favicon': 'public/favicon.ico',
-	'views': 'templates/views',
 	'view engine': 'pug',
 
 	'auto update': true,
@@ -30,12 +26,10 @@ keystone.set('locals', {
 keystone.set('routes', require('./routes'));
 
 keystone.set('nav', {
-	posts: ['posts', 'post-categories'],
-	galleries: 'galleries',
-	enquiries: 'enquiries',
+	products: ['categories', 'products'],
+	tables: ['tables'],
+	orders: ['orders'],
 	users: 'users',
 });
-
-
 
 keystone.start();
